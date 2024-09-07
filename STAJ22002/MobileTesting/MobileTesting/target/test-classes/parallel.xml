@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MobileTest" verbose="1">
+    <parameter name="platform" value="Android"/>
+    <parameter name="udid" value="emulator-5554"/>
+    <parameter name="appPackage" value="com.dmall.mfandroid"/>
+    <parameter name="appActivity" value="com.dmall.mfandroid.activity.base.SplashActivity"/>
+    <test name="AppiumProject">
+        <classes>
+            <class name="testRunners.Runner"/>
+            <class name="test.kategorilerTest.KategorilerPageTest"></class>
+        </classes>
+    </test>
+</suite>
